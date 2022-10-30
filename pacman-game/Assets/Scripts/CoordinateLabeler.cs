@@ -17,19 +17,18 @@ public class CoordinateLabeler : MonoBehaviour
     {
         if(level == null) { return; }
 
-        label.text = transform.parent.parent.name;
+        label.text = "";//transform.parent.parent.name;
     }
     // Start is called before the first frame update
     void Start()
     {
         DisplayCoordinates();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        DisplayCoordinates();
-        transform.eulerAngles = Vector3.zero;
-        transform.localScale = transform.parent.parent.parent.localScale;
+        
     }
 }

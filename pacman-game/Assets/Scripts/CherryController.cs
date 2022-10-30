@@ -36,7 +36,7 @@ public class CherryController : MonoBehaviour
     GameObject SpawnCherry(){
         int i = UnityEngine.Random.Range(0, cherrySpawner.Length);
         float spawnPosY = UnityEngine.Random.Range(cherrySpawner[i].transform.position.y - 2f, cherrySpawner[i].transform.position.y + 2f);
-        Mathf.Clamp(spawnPosY, -0.31f, -8.68f);
+        Mathf.Clamp(spawnPosY, -0.31f, -8.37f);
         GameObject go = Instantiate(cherry, new Vector3(cherrySpawner[i].transform.position.x, spawnPosY, 0), Quaternion.identity);
         if(i == 0){
             direction = Vector2.right;
